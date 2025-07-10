@@ -1,64 +1,88 @@
-/* Basic styling for the entire page */
-body {
-    font-family: sans-serif; /* Simple sans-serif font */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* White background */
-    color: #333; /* Dark grey text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure it takes full viewport height */
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page Preview</title>
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Font similar to LaTeX */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+            color: #333; /* Dark grey text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+        }
 
-/* Container for content to center it and add padding */
-.container {
-    background: #ffffff; /* White background for the content box */
-    padding: 40px;
-    border-radius: 0; /* No rounded corners */
-    box-shadow: none; /* No shadow */
-    max-width: 600px; /* Max width for readability */
-    width: 90%; /* Responsive width */
-    margin: 20px; /* Margin around the container */
-}
+        /* Container for content to center the block, but text inside is left-aligned */
+        .container {
+            background: #ffffff; /* White background for the content box */
+            padding: 40px;
+            border-radius: 0; /* No rounded corners */
+            box-shadow: none; /* No shadow */
+            max-width: 600px; /* Max width for readability */
+            width: 90%; /* Responsive width */
+            margin: 20px; /* Margin around the container */
+            text-align: left; /* Text aligned to the left */
+        }
 
-/* Styling for the main heading */
-h1 {
-    color: #333; /* Simple dark grey for heading */
-    margin-bottom: 20px;
-    font-size: 2.5em; /* Larger font size */
-}
+        /* Styling for the main heading */
+        h1 {
+            color: #333; /* Simple dark grey for heading */
+            margin-bottom: 20px;
+            font-size: 1.1em; /* Set to the same font size as paragraphs */
+        }
 
-/* Styling for paragraphs */
-p {
-    margin-bottom: 25px;
-    font-size: 1.1em;
-    line-height: 1.8;
-}
+        /* Styling for paragraphs */
+        p {
+            margin-bottom: 25px;
+            font-size: 1.1em; /* Base font size */
+            line-height: 1.8;
+        }
 
-/* Styling for the download button */
-.button {
-    display: inline-block; /* Allows padding and margin */
-    background-color: #007bff; /* Blue button */
-    color: #ffffff; /* White text on button */
-    padding: 15px 30px;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Slightly rounded corners for button */
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    box-shadow: none; /* No shadow for button */
-}
+        /* Styling for the download link */
+        .button {
+            display: inline; /* Make it behave like a text link */
+            background-color: transparent; /* No background color */
+            color: #007bff; /* Blue text color for the link */
+            padding: 0; /* No padding */
+            text-decoration: underline; /* Underline the link */
+            border-radius: 0; /* No rounded corners */
+            font-weight: normal; /* Normal font weight */
+            font-size: 1.1em; /* Same font size as paragraphs */
+            transition: color 0.3s ease; /* Smooth hover effect for color */
+            box-shadow: none; /* No shadow */
+        }
 
-.button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
+        .button:hover {
+            color: #0056b3; /* Darker blue on hover */
+            background-color: transparent; /* Ensure no background on hover */
+            text-decoration: none; /* Remove underline on hover for a subtle effect */
+        }
 
-/* Styling for the footer text */
-.footer-text {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #7f8c8d; /* Lighter grey for footer */
-}
+        /* Styling for the footer text */
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #7f8c8d; /* Lighter grey for footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Page!</h1>
+        <p>Hello! I'm glad you're here. You can learn more about my professional background by downloading my CV.</p>
+
+        <!-- Link to download your CV -->
+        <!-- Note: The actual CV download will only work on your live GitHub Pages site, as this is a local preview. -->
+        <a href="#" class="button">Download My CV</a>
+
+        <p class="footer-text">&copy; 2025 Your Name</p>
+    </div>
+</body>
+</html>
